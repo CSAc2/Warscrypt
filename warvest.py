@@ -114,7 +114,7 @@ def gen(show=True):
 	try:
 		cks=cvd(ck)
 		if lang(cks)==True:
-			open(".cok","w").write(ck)
+			open(".cok","w").write(cookie)
 			exit("* login success, run again the tools.")
 		else:print("* login fail.");gen(show=True)
 	except Exception as e:
