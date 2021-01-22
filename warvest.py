@@ -97,7 +97,7 @@ def lang(cookies):
 		if "id_ID" in i.get("href"):
 			requests.get("https://m.facebook.com/"+i.get("href"),cookies=cookies,headers=hdcok())
 			b=requests.get("https://m.facebook.com/profile.php",headers=hdcok(),cookies=cookies).text	
-			if "apa yang anda pikirkan sekarang" in b.lower():
+			if "selamat maling" in b.lower():
 				f=True
 	if f==True:
 		return True
